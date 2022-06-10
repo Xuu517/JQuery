@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../jquery.min.js"></script>
+  <style>
+    div{
+      width: 200px;
+      height: 300px;
+      background-color: pink;
+    }
+  </style>
+
+</head>
+<body>
+  <div></div>
+  <script>
+    //操作之css方法
+    $(function(){
+      //返回属性值
+     console.log($('div').css('width'));
+     //以对象形式修改，属性属性值可以不加引号
+     backgroundColor:'red';
+     //如果是复合属性则必须采用驼峰命名法   如果值不是数字，则需要加引号
+     $('div').css({
+       width:200,
+       height:400
+
+     })
+    })
+  </script>
+</body>
+</html>

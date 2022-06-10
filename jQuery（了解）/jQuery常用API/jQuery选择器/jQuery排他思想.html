@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../jquery.min.js"></script>
+</head>
+<body>
+  <button>黛玉</button>
+  <button>宝钗</button>
+  <button>宝玉</button>
+  <button>湘云</button>
+
+  <script>
+    $(function(){
+      //隐式迭代 给所有的按钮都绑定了点击事件
+      $('button').click(function(){
+        //样式： 当前的背景颜色变化  其余兄弟去掉背景颜色
+        $(this).css('background','pink');
+        //3.其余的兄弟去掉背景颜色 有隐式迭代
+        $(this).siblings('button').css('background','');
+      })
+    })
+  </script>
+  
+</body>
+</html>

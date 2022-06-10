@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../jquery.min.js"></script>
+</head>
+<body>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+
+  <script>
+    $(function(){
+      $('button').click(function(){
+        // $(this).css('background','blue');
+        // $(this).siblings().css('background','');
+        //重复了两次this 编码冗余
+        //可以用链式编程
+        $(this).css('background','blue') .siblings().css('background','');
+        //代码变得很优雅
+
+      })
+    })
+  </script>
+  
+</body>
+</html>

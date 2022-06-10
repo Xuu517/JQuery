@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery.min.js"></script>
+</head>
+<body>
+  <video src="./IVE-LOVE DIVE(高清).mp4" muted></video>
+  <script>
+    //1.DOM对象转换为jquery对象
+    //(1)我们直接获取视频，得到的是jQuery对象
+    // $('video');
+    //(2)我们已经使用原生js获取过来DOM对象
+    var myVideo=document.querySelector('video');
+    // $(myVideo).play; 原生js有
+    // myVideo.play;
+    //2.把jQuery转换成DOM对象
+    $('div')[0].play;
+    $('div').get(0).play;
+  </script>
+  
+</body>
+</html>
